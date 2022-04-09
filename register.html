@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Register</title>
+    <link rel="icon" href="img/logo.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <img class="logo" src="img/logo.png" alt="">
+            <a class="navbar-brand" href="index.html">Ask Fedorov!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+            </ul>
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search questions" aria-label="Search"
+                       maxlength="35">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+
+
+            <div class="text-end">
+                <a href="login.html" class="btn btn-secondary">Log in</a>
+                <a href="register.html" class="btn btn-secondary">Register</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <h2 class="mt-5">Register</h2>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputLogin1" class="form-label">Login</label>
+                        <input type="email" class="form-control" id="exampleInputLogin1">
+                        <h6 class="text-danger m-1"> User with this email already exists</h6>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputNickname1" class="form-label">Nickname</label>
+                        <input type="Nickname" class="form-control" id="exampleInputNickname1">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword2" class="form-label">Repeat password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="customFile"> Upload avatar </label>
+                    </div>
+                    <div class="mb-3">
+                        <img class="avatar-settings" alt="">
+                        <input type="file" class="form-control w-50" id="customFile"/>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Save changes</button>
+
+                </form>
+
+
+            </div>
+            <div class="col-3">
+                <h2 class="mt-5">Tags</h2>
+
+                <a class="btn btn-primary" href="tag.html" role="button">perl</a>
+                <a class="btn btn-primary" href="tag.html" role="button">python</a>
+                <a class="btn btn-primary" href="tag.html" role="button">C</a>
+                <a class="btn btn-primary" href="tag.html" role="button">Tehnopark</a>
+                <a class="btn btn-primary" href="tag.html" role="button">django</a>
+                <a class="btn btn-primary" href="tag.html" role="button">MySQL</a>
+
+                <h2 class="mt-5">Best Members</h2>
+                <div class="row justify-content-around">
+                    <a href="#" class="h6">Mr. White</a>
+                    <a href="#" class="h6">Mr. Orange</a>
+                    <a href="#" class="h6">Mr. Blonde</a>
+                    <a href="#" class="h6">Mr. Pink</a>
+                    <a href="#" class="h6">Mr. Blue</a>
+                    <a href="#" class="h6">Mr. Brown</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</main>
+
+
+<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+
