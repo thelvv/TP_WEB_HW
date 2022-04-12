@@ -1,0 +1,118 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Ask Fedorov!</title>
+    <link rel="icon" href="{% static "img/logo.png" %}">
+
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+
+
+<header>
+    {% block navbar %}
+
+    {% endblock navbar %}
+</header>
+
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-9">
+                {% block content %}
+
+                {% endblock content %}
+            </div>
+
+            <div class="col-3" style="margin-top: 100px">
+
+
+                {% block side_panel %}
+
+                    <div class="row">
+
+                        <div class="right-column">
+
+
+                            <div class="popular-tags">
+
+
+                                <h3>Tags</h3>
+                                <div class="popular-tags-list">
+                                    <a class="popular-tags-item" href="{% url 'tag' 'perl' %}">perl</a>
+                                    <a class="popular-tags-item" href="{% url 'tag' 'python' %}">python</a>
+                                    <a class="popular-tags-item" href="{% url 'tag' 'TechnoPark' %}">TechnoPark</a>
+                                    <a class="popular-tags-item" href="{% url 'tag' 'MySQL' %}">MySQL</a>
+                                    <a class="popular-tags-item" href="{% url 'tag' 'django' %}">django</a>
+                                    <a class="popular-tags-item" href="{% url 'tag' 'Mail.ru' %}">Mail.ru</a>
+                                    <a class="popular-tags-item" href="{% url 'tag' 'Firefox' %}">Firefox</a>
+                                    <a class="popular-tags-item" href="{% url 'tag' 'HTML' %}">HTML</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="mt-5">Best Members</h2>
+
+                        <div class="row justify-content-around">
+                            <a href="#" class="h6">Mr. White</a>
+                            <a href="#" class="h6">Mr. Orange</a>
+                            <a href="#" class="h6">Mr. Blonde</a>
+                            <a href="#" class="h6">Mr. Pink</a>
+                            <a href="#" class="h6">Mr. Blue</a>
+                            <a href="#" class="h6">Mr. Brown</a>
+                        </div>
+
+                    </div>
+
+                {% endblock side_panel %}
+            </div>
+
+            {% block bottom_panel %}
+
+            {% endblock bottom_panel %}
+
+        </div>
+    </div>
+</main>
+
+
+<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+</script>
+
+</body>
+
+</html>
+

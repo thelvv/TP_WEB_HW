@@ -1,0 +1,27 @@
+{% extends "inc/base.html" %}
+{% load static %}
+
+
+{% block navbar %}
+    {% include "inc/navbar_in.html" %}
+{% endblock navbar %}
+
+
+{% block content %}
+    <h2 class="mt-5">Hot questions</h2>
+
+    {% for question in questions %}
+        {% include "inc/question.html" %}
+    {% endfor %}
+
+{% endblock %}
+
+
+{% block side_panel %}
+    {% include "inc/sidebar.html" %}
+{% endblock %}
+
+
+{% block bottom_panel %}
+    {% include "inc/paginator.html" %}
+{% endblock bottom_panel %}

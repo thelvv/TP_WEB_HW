@@ -1,0 +1,59 @@
+{% load static %}
+
+<div class="row question">
+
+    <div class="col-2">
+
+
+        <img class="avatar-question" src="{% static "img/duck.png" %}"/>
+
+        <div class="number">
+
+
+            <button class="number-minus" type="button"
+                    onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+
+
+            </button>
+
+            <input type="number" min="0" value="0" readonly>
+            <button class="number-plus" type="button"
+                    onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="col-10">
+        <h4>{{ answer.author.name }}</h4>
+
+        <div>
+            {{ answer.text }}
+        </div>
+
+        <span>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Correct!
+            </label>
+        </div>
+</span>
+    </div>
+
+
+    <div class="row">
+        <div class="col-3">
+        </div>
+
+
+    </div>
+</div>

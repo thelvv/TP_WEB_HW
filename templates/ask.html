@@ -1,0 +1,46 @@
+{% extends "inc/base.html" %}
+{% load static %}
+
+
+{% block navbar %}
+    {% include "inc/navbar_in.html" %}
+{% endblock navbar %}
+
+
+{% block content %}
+
+    <h2 class="mt-5">Create question</h2>
+
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputTitle1" class="form-label">Title</label>
+            <input type="text" class="form-control" id="exampleInputTitle1">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputText1" class="form-label">Text</label>
+            <textarea class="form-control" id="exampleInputText1" rows="7" maxlength="1000"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputTags1" class="form-label">Tags</label>
+            <input type="Nickname" class="form-control" id="exampleInputTags1">
+        </div>
+
+
+        <button type="submit" class="btn btn-success">Create question</button>
+
+    </form>
+
+{% endblock content %}
+
+
+{% block side_panel %}
+    {% include "inc/sidebar.html" %}
+{% endblock side_panel %}
+
+
+{% block bottom_panel %}
+
+{% endblock bottom_panel %}
+

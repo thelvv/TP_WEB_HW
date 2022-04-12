@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8b11ae5-f6a8-4880-a79f-126459d654cc" name="Changes" comment="" />
+    <list default="true" id="b75269b8-16e9-45f2-8470-657f50dcc68a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/alien.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/duck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/question.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tag.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -13,16 +35,26 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="26nA4XubuxaMwW2OLjvcQuIPMWX" />
+  <component name="ProjectId" id="27c3jHpOKpeZYsBRq7KLHJmBqJO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/web-cbc4261a178c0960eb3fa097da6f1e8236721c84" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.stylelint" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/management/commands" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="askme_fedorov" type="Python.DjangoServer" factoryName="Django server">
@@ -52,21 +84,29 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d8b11ae5-f6a8-4880-a79f-126459d654cc" name="Changes" comment="" />
-      <created>1648048785512</created>
+      <changelist id="b75269b8-16e9-45f2-8470-657f50dcc68a" name="Changes" comment="" />
+      <created>1649605680927</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1648048785512</updated>
-      <workItem from="1648048786727" duration="680000" />
-      <workItem from="1649264807222" duration="650000" />
-      <workItem from="1649268331100" duration="5237000" />
-      <workItem from="1649316790579" duration="53000" />
-      <workItem from="1649442234464" duration="3725000" />
-      <workItem from="1649512512726" duration="18853000" />
+      <updated>1649605680927</updated>
+      <workItem from="1649605683567" duration="15063000" />
+      <workItem from="1649689005334" duration="24568000" />
+      <workItem from="1649717073891" duration="6753000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

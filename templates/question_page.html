@@ -1,0 +1,36 @@
+{% extends "inc/base.html" %}
+{% load static %}
+
+
+{% block navbar %}
+    {% include "inc/navbar_in.html" %}
+{% endblock navbar %}
+
+
+{% block content %}
+
+    <h2 class="mt-5">Question</h2>
+    {% include "inc/question.html" %}
+
+
+    <h2 class="mt-6">Answers</h2>
+
+    {% for answer in answers %}
+        {% include 'inc/answer.html' %}
+    {% endfor %}
+
+
+    <div class="mb-3">
+        <label for="YourAnswer" class="form-label"></label>
+        <textarea class="form-control enter-answer" id="YourAnswer" rows="3"
+                  placeholder="Enter your answer here"></textarea>
+    </div>
+
+    <button type="button" class="form-button btn btn-dark">Answer</button>
+
+{% endblock %}
+
+
+{% block side_panel %}
+    {% include "inc/sidebar.html" %}
+{% endblock %}

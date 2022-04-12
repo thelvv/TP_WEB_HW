@@ -1,0 +1,31 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+        <img class="logo" src="{% static "img/logo.png" %}" alt="">
+        <a class="navbar-brand" href=" {% url "index" %} ">Ask Fedorov!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="{% url "ask" %}" class="btn btn-primary">Ask!</a>
+
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+        </ul>
+
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search questions" aria-label="Search"
+                   maxlength="35">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+
+
+        <div class="text-end">
+            <img class="avatar-header" src="{% static "img/alien.png" %}" alt="">
+            <a href="{% url "index" %}" class="btn btn-success">username</a>
+            <a href="{% url "login" %}" class="btn btn-secondary">Log-out</a>
+            <a href="{% url "settings" %}" class="btn btn-secondary" role="button" aria-pressed="true">Settings</a>
+        </div>
+    </div>
+</nav>
