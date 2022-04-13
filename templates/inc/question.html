@@ -4,7 +4,6 @@
     <div class="col-2">
         <img class="avatar-question" src="{% static "img/alien.png" %}" alt="">
 
-        {#        <h6> Rating: {{ question.rating }} </h6>#}
         {#        <h6 class="mt-6"><a href=" {% url "index" question.pk %} "> Rate up! </a></h6>#}
 
         <div class="number">
@@ -39,6 +38,8 @@
             {% for tag in question.tags.all %}
                 <a href="{% url 'tag' tag.title %}">{{ tag.title }}</a>
             {% endfor %}
+                <h6> Rating: {{ question.rating }} </h6>
+
         </span>
 
 

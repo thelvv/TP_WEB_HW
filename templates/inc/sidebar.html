@@ -2,7 +2,7 @@
 
 <div class="right-column">
 
-    <h2>Hot Questions <a href="{% url "hot" %}" class="btn btn-warning">Click!</a> </h2>
+    <h2>Hot Questions <a href="{% url "hot" %}" class="btn btn-warning">Click!</a></h2>
 
 </div>
 
@@ -10,14 +10,13 @@
     <div class="mt-5">
         <h2>Tags</h2>
         <div class="popular-tags-list">
-            <a class="popular-tags-item" href="{% url 'tag' 'perl' %}">perl</a>
-            <a class="popular-tags-item" href="{% url 'tag' 'python' %}">python</a>
-            <a class="popular-tags-item" href="{% url 'tag' 'TechnoPark' %}">TechnoPark</a>
-            <a class="popular-tags-item" href="{% url 'tag' 'MySQL' %}">MySQL</a>
-            <a class="popular-tags-item" href="{% url 'tag' 'django' %}">django</a>
-            <a class="popular-tags-item" href="{% url 'tag' 'Mail.ru' %}">Mail.ru</a>
-            <a class="popular-tags-item" href="{% url 'tag' 'Firefox' %}">Firefox</a>
-            <a class="popular-tags-item" href="{% url 'tag' 'HTML' %}">HTML</a>
+
+            {% for question in questions %}
+                {% for tag in question.tags.all %}
+                    <a href="{% url 'tag' tag.title %}">{{ tag.title }}</a>
+                {% endfor %}
+            {% endfor %}
+
         </div>
     </div>
 </div>
@@ -25,11 +24,7 @@
 <h2 class="mt-5">Best Members</h2>
 
 <div class="row justify-content-around">
-    <a href="#" class="h6">Mr. White</a>
-    <a href="#" class="h6">Mr. Orange</a>
-    <a href="#" class="h6">Mr. Blonde</a>
-    <a href="#" class="h6">Mr. Pink</a>
-    <a href="#" class="h6">Mr. Blue</a>
-    <a href="#" class="h6">Mr. Brown</a>
+    {% for question in questions %}
+            <a> {{ question.author }}</a>
+    {% endfor %}
 </div>
-
